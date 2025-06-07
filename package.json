@@ -1,0 +1,23 @@
+{
+  "name": "society-ease",
+  "version": "1.0.0",
+  "description": "Comprehensive society management system",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:admin\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev", 
+    "dev:admin": "cd admin && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ../admin && npm install",
+    "build:all": "cd backend && npm run build && cd ../frontend && npm run build && cd ../admin && npm run build",
+    "start:all": "concurrently \"npm run start:backend\" \"npm run start:frontend\" \"npm run start:admin\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "start:admin": "cd admin && npm start"
+  },
+  "keywords": ["society", "management", "nextjs", "nodejs", "mongodb"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
