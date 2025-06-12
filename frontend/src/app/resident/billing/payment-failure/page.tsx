@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { Suspense, useEffect, useState } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { useAuth } from "@/hooks/use-auth"
 import { DashboardLayout } from "@/components/dashboard/dashboard-layout"
@@ -14,11 +14,12 @@ import {
   CreditCard,
   AlertTriangle,
   Phone,
-  Mail
+  Mail,
+  Loader2
 } from "lucide-react"
 import { getBillDetails, type Bill } from "@/lib/api/billing"
 
-export default function PaymentFailurePage() {
+function PaymentFailureContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const { user } = useAuth()
@@ -206,5 +207,17 @@ export default function PaymentFailurePage() {
         </div>
       </DashboardContent>
     </DashboardLayout>
+  )
+}
+
+export default function PaymentFailurePage() {
+  return (
+    <Suspense fallback={
+      <div className="flex items-center justify-center min-h-screen">
+        <Loader2 className="h-8 w-8 animate-spin" />
+      </div>
+    }>
+      <PaymentFailureContent />
+    </Suspense>
   )
 }

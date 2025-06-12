@@ -1,11 +1,5 @@
 'use client'
 
-// Generate static params for static export
-export async function generateStaticParams() {
-  // Return empty array for static export - pages will be generated on demand
-  return []
-}
-
 import React, { useState, useEffect, useCallback } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'

@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, Suspense } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { useAuth } from "@/hooks/use-auth"
 import { DashboardLayout } from "@/components/dashboard/dashboard-layout"
@@ -11,7 +11,8 @@ import {
   CheckCircle,
   Home,
   Receipt,
-  Download
+  Download,
+  Loader2
 } from "lucide-react"
 import { getPaymentByBillId, downloadPaymentReceipt } from "@/lib/api/billing"
 
@@ -48,7 +49,7 @@ interface PaymentData {
   }
 }
 
-export default function PaymentSuccessPage() {
+function PaymentSuccessContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const { user } = useAuth()
@@ -324,5 +325,38 @@ export default function PaymentSuccessPage() {
         </div>
       </DashboardContent>
     </DashboardLayout>
+  )
+}
+
+function LoadingFallback() {
+  return (
+    <DashboardLayout
+      userName="Resident"
+      userEmail="resident@email.com"
+      notifications={2}
+    >
+      <DashboardContent
+        title="Payment Successful"
+        description="Loading payment details..."
+      >
+        <div className="max-w-2xl mx-auto">
+          <Card>
+            <CardContent className="p-6">
+              <div className="flex items-center justify-center h-64">
+                <Loader2 className="h-8 w-8 animate-spin" />
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </DashboardContent>
+    </DashboardLayout>
+  )
+}
+
+export default function PaymentSuccessPage() {
+  return (
+    <Suspense fallback={<LoadingFallback />}>
+      <PaymentSuccessContent />
+    </Suspense>
   )
 }
