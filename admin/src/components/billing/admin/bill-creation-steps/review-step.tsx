@@ -35,7 +35,6 @@ interface SelectedResident {
 interface ChargeConfig {
   maintenanceAmount: number
   utilityCharges: number
-  parkingFee: number
   specialAssessments: number
   lateFeePenalty: number
   otherCharges: number
@@ -63,7 +62,6 @@ const BILL_TYPE_LABELS = {
 export function ReviewStep({ billingPeriod, selectedResidents, charges }: ReviewStepProps) {
   const totalAmount = charges.maintenanceAmount + 
                      charges.utilityCharges + 
-                     charges.parkingFee + 
                      charges.specialAssessments + 
                      charges.lateFeePenalty + 
                      charges.otherCharges
@@ -73,7 +71,6 @@ export function ReviewStep({ billingPeriod, selectedResidents, charges }: Review
   const chargeBreakdown = [
     { label: "Maintenance Charges", amount: charges.maintenanceAmount, show: charges.maintenanceAmount > 0 },
     { label: "Utility Charges", amount: charges.utilityCharges, show: charges.utilityCharges > 0 },
-    { label: "Parking Fee", amount: charges.parkingFee, show: charges.parkingFee > 0 },
     { label: "Special Assessments", amount: charges.specialAssessments, show: charges.specialAssessments > 0 },
     { label: "Late Fee/Penalty", amount: charges.lateFeePenalty, show: charges.lateFeePenalty > 0 },
     { label: "Other Charges", amount: charges.otherCharges, show: charges.otherCharges > 0 }

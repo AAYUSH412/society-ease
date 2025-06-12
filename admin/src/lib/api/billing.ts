@@ -703,7 +703,6 @@ export interface BulkBillGenerationRequest {
   additionalCharges?: {
     waterCharges?: number
     electricityCharges?: number
-    parkingCharges?: number
     maintenanceCharges?: number
     securityCharges?: number
     clubhouseCharges?: number

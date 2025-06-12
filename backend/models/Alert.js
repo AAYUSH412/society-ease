@@ -114,7 +114,7 @@ const alertSchema = new mongoose.Schema({
       }],
       areas: [{
         type: String,
-        enum: ['parking', 'garden', 'clubhouse', 'gym', 'pool', 'lobby', 'elevator', 'common_area']
+        enum: ['garden', 'clubhouse', 'gym', 'pool', 'lobby', 'elevator', 'common_area']
       }]
     },
     societyName: {

@@ -14,7 +14,7 @@ const violationFineSchema = new mongoose.Schema({
   // Violation Reference
   violationId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'ParkingViolation',
+    ref: 'Violation',
     required: [true, 'Violation ID is required'],
     index: true
   },
@@ -64,14 +64,12 @@ const violationFineSchema = new mongoose.Schema({
     type: String,
     required: true,
     enum: [
-      'unauthorized_parking',
-      'blocking_fire_lane',
-      'visitor_parking_misuse',
-      'parking_in_disabled_spot',
-      'double_parking',
-      'parking_outside_lines',
-      'blocking_entrance',
-      'overstaying_time_limit',
+      'noise_complaint',
+      'property_damage',
+      'unauthorized_access',
+      'littering',
+      'smoking_violation',
+      'pet_violation',
       'other'
     ]
   },

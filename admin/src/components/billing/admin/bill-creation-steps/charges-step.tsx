@@ -21,7 +21,6 @@ import {
 interface ChargeConfig {
   maintenanceAmount: number
   utilityCharges: number
-  parkingFee: number
   specialAssessments: number
   lateFeePenalty: number
   otherCharges: number
@@ -38,7 +37,6 @@ const CHARGE_PRESETS = {
   maintenance: {
     maintenanceAmount: 5500,
     utilityCharges: 1200,
-    parkingFee: 1000,
     specialAssessments: 0,
     lateFeePenalty: 0,
     otherCharges: 0,
@@ -47,7 +45,6 @@ const CHARGE_PRESETS = {
   special_assessment: {
     maintenanceAmount: 0,
     utilityCharges: 0,
-    parkingFee: 0,
     specialAssessments: 10000,
     lateFeePenalty: 0,
     otherCharges: 0,
@@ -56,7 +53,6 @@ const CHARGE_PRESETS = {
   penalty: {
     maintenanceAmount: 0,
     utilityCharges: 0,
-    parkingFee: 0,
     specialAssessments: 0,
     lateFeePenalty: 500,
     otherCharges: 0,
@@ -65,7 +61,6 @@ const CHARGE_PRESETS = {
   other: {
     maintenanceAmount: 0,
     utilityCharges: 0,
-    parkingFee: 0,
     specialAssessments: 0,
     lateFeePenalty: 0,
     otherCharges: 1000,
@@ -95,11 +90,8 @@ export function ChargesStep({ charges, onChange, billingType }: ChargesStepProps
   const loadPreset = (preset: keyof typeof CHARGE_PRESETS) => {
     onChange(CHARGE_PRESETS[preset])
     setHasCustomized(false)
-  }
-
-  const totalAmount = charges.maintenanceAmount + 
+  }  const totalAmount = charges.maintenanceAmount +
                      charges.utilityCharges + 
-                     charges.parkingFee + 
                      charges.specialAssessments + 
                      charges.lateFeePenalty + 
                      charges.otherCharges
@@ -120,14 +112,6 @@ export function ChargesStep({ charges, onChange, billingType }: ChargesStepProps
       description: 'Water, electricity, common area utilities',
       value: charges.utilityCharges,
       color: 'text-yellow-600'
-    },
-    {
-      key: 'parkingFee',
-      label: 'Parking Fee',
-      icon: Car,
-      description: 'Vehicle parking charges',
-      value: charges.parkingFee,
-      color: 'text-green-600'
     },
     {
       key: 'specialAssessments',
@@ -286,7 +270,6 @@ export function ChargesStep({ charges, onChange, billingType }: ChargesStepProps
                     <li>• Use presets to quickly set up common billing scenarios</li>
                     <li>• Maintenance charges are typically recurring monthly fees</li>
                     <li>• Special assessments are usually one-time charges</li>
-                    <li>• Set parking fees to 0 if included in maintenance</li>
                     <li>• Late fees are added to overdue bills automatically</li>
                   </ul>
                 </div>

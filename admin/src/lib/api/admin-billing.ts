@@ -237,7 +237,6 @@ export const generateBulkBills = async (billData: {
   description?: string
   additionalCharges?: {
     utilityCharges?: number
-    parkingFee?: number
     specialAssessments?: number
     lateFeePenalty?: number
     otherCharges?: number

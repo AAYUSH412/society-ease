@@ -1,5 +1,4 @@
 import ViolationCategory from '../models/ViolationCategory.js';
-import ParkingViolation from '../models/ParkingViolation.js';
 import mongoose from 'mongoose';
 
 /**
@@ -309,14 +308,7 @@ export const deleteCategory = async (req, res) => {
       });
     }
 
-    // Check if category is being used in any violations
-    const violationCount = await ParkingViolation.countDocuments({ categoryId: id });
-    if (violationCount > 0) {
-      return res.status(400).json({
-        success: false,
-        message: `Cannot delete category. It is used in ${violationCount} violation(s). Consider deactivating it instead.`
-      });
-    }
+    // Category can be safely deleted since parking violations have been removed
 
     await ViolationCategory.findByIdAndDelete(id);
 

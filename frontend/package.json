@@ -2,9 +2,12 @@
   "name": "society-ease-resident-portal",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aayush412.github.io/society-ease/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:ci": "ESLINT_NO_DEV_ERRORS=true next build",
+    "export": "next build",
     "start": "next start",
     "lint": "next lint"
   },

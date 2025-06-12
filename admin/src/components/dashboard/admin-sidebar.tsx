@@ -12,7 +12,6 @@ import {
   FileText,
   MessageSquare,
   Bell,
-  Car,
   Shield,
   Settings,
   BarChart3,
@@ -117,29 +116,6 @@ const adminSidebarItems: SidebarItem[] = [
       {
         title: "Manage Alerts",
         href: "/admin/alerts/manage",
-        icon: Settings,
-      },
-    ],
-  },
-  {
-    title: "Parking Management",
-    href: "/parking",
-    icon: Car,
-    children: [
-      {
-        title: "Parking Slots",
-        href: "/parking/slots",
-        icon: Car,
-      },
-      {
-        title: "Violations",
-        href: "/parking/violations",
-        icon: AlertTriangle,
-        badge: 3,
-      },
-      {
-        title: "Allocation",
-        href: "/parking/allocation",
         icon: Settings,
       },
     ],

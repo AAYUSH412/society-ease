@@ -71,12 +71,6 @@ const residentSidebarItems: SidebarItem[] = [
     description: "Society announcements",
   },
   {
-    title: "Parking",
-    href: "/resident/parking",
-    icon: Car,
-    description: "Manage parking slot",
-  },
-  {
     title: "Directory",
     href: "/resident/directory",
     icon: BookOpen,

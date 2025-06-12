@@ -25,7 +25,6 @@ import {
 interface BillingSettings {
   defaultMaintenanceAmount: number
   defaultUtilityCharges: number
-  defaultParkingFee: number
   lateFeePercentage: number
   lateFeeDays: number
   paymentDueDays: number
@@ -44,7 +43,6 @@ interface BillingSettings {
 const defaultSettings: BillingSettings = {
   defaultMaintenanceAmount: 5500,
   defaultUtilityCharges: 1200,
-  defaultParkingFee: 1000,
   lateFeePercentage: 2,
   lateFeeDays: 15,
   paymentDueDays: 30,

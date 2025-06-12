@@ -1,0 +1,272 @@
+[
+  {
+    "_id": "901def23456789012cde0001",
+    "billNumber": "BILL202401001",
+    "billType": "maintenance",
+    "residentId": "60d5ecb74b24c72d88a7e5a1",
+    "flatNumber": "A-201",
+    "building": "Tower A",
+    "societyName": "Default Society",
+    "billingPeriod": {
+      "month": 1,
+      "year": 2024
+    },
+    "amount": {
+      "baseAmount": 3500,
+      "taxes": 350,
+      "lateFee": 0,
+      "otherCharges": 150,
+      "discount": 0,
+      "totalAmount": 4000
+    },
+    "generatedDate": "2024-01-01T00:00:00.000Z",
+    "dueDate": "2024-01-31T23:59:59.000Z",
+    "status": "paid",
+    "paymentStatus": "paid",
+    "paidAmount": 4000,
+    "paymentDate": "2024-01-15T10:30:00.000Z",
+    "paymentMethod": "razorpay_upi",
+    "description": "Monthly maintenance bill for January 2024",
+    "items": [
+      {
+        "name": "Society Maintenance",
+        "description": "Monthly maintenance charges",
+        "amount": 2500,
+        "quantity": 1,
+        "rate": 2500
+      },
+      {
+        "name": "Parking Charges",
+        "description": "Monthly parking fee",
+        "amount": 1000,
+        "quantity": 1,
+        "rate": 1000
+      },
+      {
+        "name": "Utilities",
+        "description": "Common area utilities",
+        "amount": 150,
+        "quantity": 1,
+        "rate": 150
+      }
+    ],
+    "generatedBy": "60d5ecb74b24c72d88a7e5a3",
+    "consecutivePaymentMonth": 12,
+    "isLoyaltyEligible": true,
+    "loyaltyDiscountApplied": 0,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-15T10:30:00.000Z"
+  },
+  {
+    "_id": "901def23456789012cde0002",
+    "billNumber": "BILL202401002",
+    "billType": "maintenance",
+    "residentId": "60d5ecb74b24c72d88a7e5a2",
+    "flatNumber": "B-305",
+    "building": "Tower B",
+    "societyName": "Default Society",
+    "billingPeriod": {
+      "month": 1,
+      "year": 2024
+    },
+    "amount": {
+      "baseAmount": 4200,
+      "taxes": 420,
+      "lateFee": 210,
+      "otherCharges": 170,
+      "discount": 0,
+      "totalAmount": 5000
+    },
+    "generatedDate": "2024-01-01T00:00:00.000Z",
+    "dueDate": "2024-01-31T23:59:59.000Z",
+    "status": "overdue",
+    "paymentStatus": "unpaid",
+    "paidAmount": 0,
+    "description": "Monthly maintenance bill for January 2024",
+    "items": [
+      {
+        "name": "Society Maintenance",
+        "description": "Monthly maintenance charges",
+        "amount": 3000,
+        "quantity": 1,
+        "rate": 3000
+      },
+      {
+        "name": "Parking Charges",
+        "description": "Monthly parking fee",
+        "amount": 1200,
+        "quantity": 1,
+        "rate": 1200
+      },
+      {
+        "name": "Utilities",
+        "description": "Common area utilities",
+        "amount": 170,
+        "quantity": 1,
+        "rate": 170
+      }
+    ],
+    "remindersSent": [
+      "2024-02-01T10:00:00.000Z",
+      "2024-02-05T10:00:00.000Z"
+    ],
+    "lastReminderSent": "2024-02-05T10:00:00.000Z",
+    "generatedBy": "60d5ecb74b24c72d88a7e5a3",
+    "consecutivePaymentMonth": 0,
+    "isLoyaltyEligible": false,
+    "loyaltyDiscountApplied": 0,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-02-05T10:00:00.000Z"
+  },
+  {
+    "_id": "901def23456789012cde0003",
+    "billNumber": "BILL202401003",
+    "billType": "penalty",
+    "residentId": "60d5ecb74b24c72d88a7e5a2",
+    "flatNumber": "B-305",
+    "building": "Tower B",
+    "societyName": "Default Society",
+    "billingPeriod": {
+      "month": 1,
+      "year": 2024
+    },
+    "amount": {
+      "baseAmount": 500,
+      "taxes": 0,
+      "lateFee": 0,
+      "otherCharges": 0,
+      "discount": 0,
+      "totalAmount": 500
+    },
+    "generatedDate": "2024-01-15T14:30:00.000Z",
+    "dueDate": "2024-02-14T23:59:59.000Z",
+    "status": "pending",
+    "paymentStatus": "unpaid",
+    "paidAmount": 0,
+    "description": "Parking violation fine - Unauthorized parking",
+    "items": [
+      {
+        "name": "Parking Violation Fine",
+        "description": "Unauthorized parking in designated slot A-201",
+        "amount": 500,
+        "quantity": 1,
+        "rate": 500
+      }
+    ],
+    "generatedBy": "60d5ecb74b24c72d88a7e5a3",
+    "consecutivePaymentMonth": 0,
+    "isLoyaltyEligible": false,
+    "loyaltyDiscountApplied": 0,
+    "createdAt": "2024-01-15T14:30:00.000Z",
+    "updatedAt": "2024-01-15T14:30:00.000Z"
+  },
+  {
+    "_id": "901def23456789012cde0004",
+    "billNumber": "BILL202401004",
+    "billType": "maintenance",
+    "residentId": "60d5ecb74b24c72d88a7e5a4",
+    "flatNumber": "C-102",
+    "building": "Tower C",
+    "societyName": "Default Society",
+    "billingPeriod": {
+      "month": 1,
+      "year": 2024
+    },
+    "amount": {
+      "baseAmount": 3000,
+      "taxes": 300,
+      "lateFee": 0,
+      "otherCharges": 200,
+      "discount": 150,
+      "totalAmount": 3350
+    },
+    "generatedDate": "2024-01-01T00:00:00.000Z",
+    "dueDate": "2024-01-31T23:59:59.000Z",
+    "status": "paid",
+    "paymentStatus": "paid",
+    "paidAmount": 3350,
+    "paymentDate": "2024-01-20T14:15:00.000Z",
+    "paymentMethod": "bank_transfer",
+    "description": "Monthly maintenance bill for January 2024",
+    "items": [
+      {
+        "name": "Society Maintenance",
+        "description": "Monthly maintenance charges",
+        "amount": 2200,
+        "quantity": 1,
+        "rate": 2200
+      },
+      {
+        "name": "Parking Charges",
+        "description": "Monthly parking fee",
+        "amount": 800,
+        "quantity": 1,
+        "rate": 800
+      },
+      {
+        "name": "Utilities",
+        "description": "Common area utilities",
+        "amount": 200,
+        "quantity": 1,
+        "rate": 200
+      }
+    ],
+    "generatedBy": "60d5ecb74b24c72d88a7e5a3",
+    "consecutivePaymentMonth": 8,
+    "isLoyaltyEligible": true,
+    "loyaltyDiscountApplied": 150,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-20T14:15:00.000Z"
+  },
+  {
+    "_id": "901def23456789012cde0005",
+    "billNumber": "BILL202401005",
+    "billType": "special_assessment",
+    "residentId": "60d5ecb74b24c72d88a7e5a1",
+    "flatNumber": "A-201",
+    "building": "Tower A",
+    "societyName": "Default Society",
+    "billingPeriod": {
+      "month": 1,
+      "year": 2024
+    },
+    "amount": {
+      "baseAmount": 5000,
+      "taxes": 500,
+      "lateFee": 0,
+      "otherCharges": 0,
+      "discount": 0,
+      "totalAmount": 5500
+    },
+    "generatedDate": "2024-01-10T00:00:00.000Z",
+    "dueDate": "2024-03-10T23:59:59.000Z",
+    "status": "partially_paid",
+    "paymentStatus": "partially_paid",
+    "paidAmount": 2750,
+    "paymentDate": "2024-01-25T11:30:00.000Z",
+    "paymentMethod": "razorpay_card",
+    "description": "Special assessment for elevator maintenance and lobby renovation",
+    "items": [
+      {
+        "name": "Elevator Maintenance",
+        "description": "Annual elevator service and repair",
+        "amount": 3000,
+        "quantity": 1,
+        "rate": 3000
+      },
+      {
+        "name": "Lobby Renovation",
+        "description": "Lobby flooring and lighting upgrade",
+        "amount": 2000,
+        "quantity": 1,
+        "rate": 2000
+      }
+    ],
+    "generatedBy": "60d5ecb74b24c72d88a7e5a3",
+    "consecutivePaymentMonth": 12,
+    "isLoyaltyEligible": false,
+    "loyaltyDiscountApplied": 0,
+    "createdAt": "2024-01-10T00:00:00.000Z",
+    "updatedAt": "2024-01-25T11:30:00.000Z"
+  }
+]

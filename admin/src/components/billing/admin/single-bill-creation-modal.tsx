@@ -48,7 +48,6 @@ interface BillFormData {
   year: number
   baseAmount: number
   utilityCharges: number
-  parkingFee: number
   specialAssessments: number
   lateFeePenalty: number
   otherCharges: number
@@ -95,7 +94,6 @@ export function SingleBillCreationModal({
     year: new Date().getFullYear(),
     baseAmount: 5500,
     utilityCharges: 1200,
-    parkingFee: 1000,
     specialAssessments: 0,
     lateFeePenalty: 0,
     otherCharges: 0,
@@ -106,7 +104,7 @@ export function SingleBillCreationModal({
   })
 
   // Calculate totals
-  const subtotal = formData.baseAmount + formData.utilityCharges + formData.parkingFee + 
+  const subtotal = formData.baseAmount + formData.utilityCharges + 
                    formData.specialAssessments + formData.lateFeePenalty + formData.otherCharges
   const taxAmount = (subtotal * formData.taxRate) / 100
   const totalAmount = subtotal + taxAmount - formData.discount
@@ -142,7 +140,6 @@ export function SingleBillCreationModal({
         description: formData.description,
         additionalCharges: {
           utilityCharges: formData.utilityCharges,
-          parkingFee: formData.parkingFee,
           specialAssessments: formData.specialAssessments,
           lateFeePenalty: formData.lateFeePenalty,
           otherCharges: formData.otherCharges
@@ -361,22 +358,6 @@ export function SingleBillCreationModal({
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="parkingFee">Parking Fee</Label>
-                    <div className="relative">
-                      <IndianRupee className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                      <Input
-                        id="parkingFee"
-                        type="number"
-                        value={formData.parkingFee}
-                        onChange={(e) => handleInputChange('parkingFee', parseFloat(e.target.value) || 0)}
-                        className="pl-10"
-                        min={0}
-                        step={0.01}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
                     <Label htmlFor="specialAssessments">Special Assessments</Label>
                     <div className="relative">
                       <IndianRupee className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -487,12 +468,6 @@ export function SingleBillCreationModal({
                     </div>
                   )}
                   
-                  {formData.parkingFee > 0 && (
-                    <div className="flex justify-between text-sm">
-                      <span>Parking Fee:</span>
-                      <span>₹{formData.parkingFee.toLocaleString()}</span>
-                    </div>
-                  )}
                   
                   {formData.specialAssessments > 0 && (
                     <div className="flex justify-between text-sm">

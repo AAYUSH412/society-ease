@@ -37,7 +37,6 @@ interface BillingPeriod {
 interface ChargeConfig {
   maintenanceAmount: number
   utilityCharges: number
-  parkingFee: number
   specialAssessments: number
   lateFeePenalty: number
   otherCharges: number
@@ -120,7 +119,6 @@ export function GenerationProgressStep({
         additionalCharges: {
           waterCharges: charges.utilityCharges,
           electricityCharges: 0,
-          parkingCharges: charges.parkingFee,
           maintenanceCharges: charges.specialAssessments,
           securityCharges: charges.lateFeePenalty,
           clubhouseCharges: 0,

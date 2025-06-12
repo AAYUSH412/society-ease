@@ -1,0 +1,185 @@
+[
+  {
+    "_id": "123def456789012def123001",
+    "notificationId": "NOT1705485600001",
+    "alertId": "456abc789012def456abc001",
+    "notificationType": "alert_created",
+    "recipientId": "60d5ecb74b24c72d88a7e5a1",
+    "recipientDetails": {
+      "email": "john.smith@email.com",
+      "flatNumber": "A-201",
+      "building": "Tower A",
+      "societyName": "Default Society"
+    },
+    "status": "delivered",
+    "sentAt": "2024-01-15T14:35:00.000Z",
+    "deliveredAt": "2024-01-15T14:35:02.000Z",
+    "messageId": "msg_001_delivered",
+    "content": {
+      "subject": "New Parking Violation Report Submitted",
+      "body": "A new parking violation has been reported for vehicle MH 01 AB 1234 in your parking area. Please review the details in your dashboard.",
+      "htmlBody": "<p>A new parking violation has been reported for vehicle <strong>MH 01 AB 1234</strong> in your parking area.</p><p>Please review the details in your dashboard.</p>"
+    },
+    "priority": "medium",
+    "isActive": true,
+    "createdAt": "2024-01-15T14:35:00.000Z",
+    "updatedAt": "2024-01-15T14:35:02.000Z"
+  },
+  {
+    "_id": "123def456789012def123002",
+    "notificationId": "NOT1705485600002",
+    "alertId": "456abc789012def456abc002",
+    "notificationType": "alert_created",
+    "recipientId": "60d5ecb74b24c72d88a7e5a2",
+    "recipientDetails": {
+      "email": "mike.johnson@email.com",
+      "flatNumber": "B-305",
+      "building": "Tower B",
+      "societyName": "Default Society"
+    },
+    "status": "delivered",
+    "sentAt": "2024-01-15T14:40:00.000Z",
+    "deliveredAt": "2024-01-15T14:40:03.000Z",
+    "messageId": "msg_002_delivered",
+    "content": {
+      "subject": "Parking Violation Fine Issued - Action Required",
+      "body": "A fine of ₹500 has been issued for unauthorized parking violation. Please pay within 30 days to avoid late fees. Fine ID: VF1705485600001",
+      "htmlBody": "<p>A fine of <strong>₹500</strong> has been issued for unauthorized parking violation.</p><p>Please pay within 30 days to avoid late fees.</p><p>Fine ID: <strong>VF1705485600001</strong></p>"
+    },
+    "priority": "high",
+    "isActive": true,
+    "createdAt": "2024-01-15T14:40:00.000Z",
+    "updatedAt": "2024-01-15T14:40:03.000Z"
+  },
+  {
+    "_id": "123def456789012def123003",
+    "notificationId": "NOT1705485600003",
+    "alertId": "456abc789012def456abc003",
+    "notificationType": "reminder",
+    "recipientId": "60d5ecb74b24c72d88a7e5a2",
+    "recipientDetails": {
+      "email": "mike.johnson@email.com",
+      "flatNumber": "B-305",
+      "building": "Tower B",
+      "societyName": "Default Society"
+    },
+    "status": "delivered",
+    "sentAt": "2024-02-05T10:00:00.000Z",
+    "deliveredAt": "2024-02-05T10:00:01.000Z",
+    "messageId": "msg_003_delivered",
+    "content": {
+      "subject": "Payment Reminder - Overdue Bill",
+      "body": "Your maintenance bill for January 2024 (BILL202401002) is overdue. Total amount: ₹5,000. Please pay immediately to avoid additional late fees.",
+      "htmlBody": "<p>Your maintenance bill for January 2024 (<strong>BILL202401002</strong>) is overdue.</p><p>Total amount: <strong>₹5,000</strong></p><p>Please pay immediately to avoid additional late fees.</p>"
+    },
+    "priority": "urgent",
+    "isActive": true,
+    "createdAt": "2024-02-05T10:00:00.000Z",
+    "updatedAt": "2024-02-05T10:00:01.000Z"
+  },
+  {
+    "_id": "123def456789012def123004",
+    "notificationId": "NOT1705485600004",
+    "alertId": "456abc789012def456abc004",
+    "notificationType": "alert_resolved",
+    "recipientId": "60d5ecb74b24c72d88a7e5a9",
+    "recipientDetails": {
+      "email": "kevin.martinez@email.com",
+      "flatNumber": "B-702",
+      "building": "Tower B",
+      "societyName": "Default Society"
+    },
+    "status": "delivered",
+    "sentAt": "2024-01-13T10:05:00.000Z",
+    "deliveredAt": "2024-01-13T10:05:02.000Z",
+    "messageId": "msg_004_delivered",
+    "content": {
+      "subject": "Parking Violation Resolved - Payment Confirmed",
+      "body": "Your parking violation fine has been resolved. Payment of ₹400 has been confirmed. Thank you for your cooperation. Violation ID: PV1705485600004",
+      "htmlBody": "<p>Your parking violation fine has been resolved.</p><p>Payment of <strong>₹400</strong> has been confirmed.</p><p>Thank you for your cooperation.</p><p>Violation ID: <strong>PV1705485600004</strong></p>"
+    },
+    "priority": "low",
+    "isActive": true,
+    "createdAt": "2024-01-13T10:05:00.000Z",
+    "updatedAt": "2024-01-13T10:05:02.000Z"
+  },
+  {
+    "_id": "123def456789012def123005",
+    "notificationId": "NOT1705485600005",
+    "alertId": "456abc789012def456abc005",
+    "notificationType": "alert_created",
+    "recipientId": "60d5ecb74b24c72d88a7e5a4",
+    "recipientDetails": {
+      "email": "sarah.wilson@email.com",
+      "flatNumber": "C-102",
+      "building": "Tower C",
+      "societyName": "Default Society"
+    },
+    "status": "delivered",
+    "sentAt": "2024-01-14T15:25:00.000Z",
+    "deliveredAt": "2024-01-14T15:25:01.000Z",
+    "messageId": "msg_005_delivered",
+    "content": {
+      "subject": "Critical Parking Violation Report Submitted",
+      "body": "Your report about fire lane blocking has been submitted successfully. This is a critical safety issue and will be addressed immediately. Report ID: PV1705485600002",
+      "htmlBody": "<p>Your report about <strong>fire lane blocking</strong> has been submitted successfully.</p><p>This is a critical safety issue and will be addressed immediately.</p><p>Report ID: <strong>PV1705485600002</strong></p>"
+    },
+    "priority": "urgent",
+    "isActive": true,
+    "createdAt": "2024-01-14T15:25:00.000Z",
+    "updatedAt": "2024-01-14T15:25:01.000Z"
+  },
+  {
+    "_id": "123def456789012def123006",
+    "notificationId": "NOT1705485600006",
+    "alertId": "456abc789012def456abc006",
+    "notificationType": "alert_updated",
+    "recipientId": "60d5ecb74b24c72d88a7e5a7",
+    "recipientDetails": {
+      "email": "robert.taylor@email.com",
+      "flatNumber": "C-203",
+      "building": "Tower C",
+      "societyName": "Default Society"
+    },
+    "status": "failed",
+    "sentAt": "2024-01-18T14:35:00.000Z",
+    "failedAt": "2024-01-18T14:35:05.000Z",
+    "errorMessage": "Email delivery failed - mailbox full",
+    "messageId": "msg_006_failed",
+    "content": {
+      "subject": "Dispute Update - Under Review",
+      "body": "Your dispute for fine VF1705485600004 is currently under review. We will investigate your evidence and provide a decision within 5 business days.",
+      "htmlBody": "<p>Your dispute for fine <strong>VF1705485600004</strong> is currently under review.</p><p>We will investigate your evidence and provide a decision within 5 business days.</p>"
+    },
+    "priority": "medium",
+    "isActive": true,
+    "createdAt": "2024-01-18T14:35:00.000Z",
+    "updatedAt": "2024-01-18T14:35:05.000Z"
+  },
+  {
+    "_id": "123def456789012def123007",
+    "notificationId": "NOT1705485600007",
+    "alertId": "456abc789012def456abc007",
+    "notificationType": "reminder",
+    "recipientId": "60d5ecb74b24c72d88a7e5a1",
+    "recipientDetails": {
+      "email": "john.smith@email.com",
+      "flatNumber": "A-201",
+      "building": "Tower A",
+      "societyName": "Default Society"
+    },
+    "status": "delivered",
+    "sentAt": "2024-02-25T09:00:00.000Z",
+    "deliveredAt": "2024-02-25T09:00:02.000Z",
+    "messageId": "msg_007_delivered",
+    "content": {
+      "subject": "Payment Reminder - Special Assessment Due",
+      "body": "Reminder: Your special assessment payment (BILL202401005) has a remaining balance of ₹2,750. Due date: March 10, 2024. Please complete your payment to avoid late fees.",
+      "htmlBody": "<p><strong>Reminder:</strong> Your special assessment payment (<strong>BILL202401005</strong>) has a remaining balance of <strong>₹2,750</strong>.</p><p>Due date: <strong>March 10, 2024</strong></p><p>Please complete your payment to avoid late fees.</p>"
+    },
+    "priority": "medium",
+    "isActive": true,
+    "createdAt": "2024-02-25T09:00:00.000Z",
+    "updatedAt": "2024-02-25T09:00:02.000Z"
+  }
+]

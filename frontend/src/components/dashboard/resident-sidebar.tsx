@@ -186,12 +186,6 @@ const residentSidebarSections: SidebarSection[] = [
         ],
       },
       {
-        title: "Parking",
-        href: "/resident/parking",
-        icon: Car,
-        description: "Manage parking allocation",
-      },
-      {
         title: "Visitor Management",
         href: "/resident/visitors",
         icon: Users,

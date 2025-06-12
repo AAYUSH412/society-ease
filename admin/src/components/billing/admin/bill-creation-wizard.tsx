@@ -65,7 +65,6 @@ interface SelectedResident {
 interface ChargeConfig {
   maintenanceAmount: number
   utilityCharges: number
-  parkingFee: number
   specialAssessments: number
   lateFeePenalty: number
   otherCharges: number
@@ -88,7 +87,6 @@ export function BillCreationWizard({ onClose, onComplete }: BillCreationWizardPr
   const [charges, setCharges] = useState<ChargeConfig>({
     maintenanceAmount: 5500,
     utilityCharges: 1200,
-    parkingFee: 1000,
     specialAssessments: 0,
     lateFeePenalty: 0,
     otherCharges: 0,
