@@ -1,5 +1,7 @@
 # Society Ease - Resident Portal
 
+
+
 A modern, intuitive web application designed for residential society members to manage their daily activities, billing, alerts, and community interactions. Built with Next.js and TypeScript for optimal performance and user experience.
 
 ## 🏠 Features

@@ -1,5 +1,7 @@
 # Society Ease - Admin Dashboard
 
+
+
 A comprehensive admin panel built with Next.js and TypeScript for managing residential society operations. This dashboard provides administrators with powerful tools to oversee all aspects of society management.
 
 ## 🚀 Features

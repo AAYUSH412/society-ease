@@ -1,5 +1,7 @@
 # Society Ease - Backend API
 
+
+
 A robust and scalable Node.js backend API server that powers the Society Ease residential management platform. Built with Express.js, MongoDB, and modern security practices to handle all society management operations.
 
 ## 🚀 Features
